@@ -1,0 +1,24 @@
+Weather Observation Station 5
+Query the two cities in STATION with the shortest and longest CITY names, as well
+ as their respective lengths (i.e.: number of characters in the name).
+If there is more than one smallest or largest city, choose the one that comes first
+when ordered alphabetically.
+
+The STATION table is described as follows:
+   ID = Number
+   NAME = Varchar2 (21)
+   STATE = Varchar2 (2)
+   LAT_N = Number
+   LONG_N = Number
+
+==========SOLUTION========
+MS SQL
+/#This query brings up the city with the shortest length#/
+SELECT CITY, length(CITY)
+FROM STATION
+ORDER BY length(CITY), CITY LIMIT 1;
+
+/#This query brings up the city with the longest length#/
+SELECT CITY, length(CITY)
+FROM STATION
+ORDER BY length(CITY) DESC, CITY LIMIT 1;

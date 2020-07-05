@@ -1,0 +1,12 @@
+Looping and Skipping
+Objective is to list all odd numbers from 1 to 99
+
+==========SOLUTION========
+#!/bin/bash
+for i in {1..99}
+do
+        rem=$(($i % 2))
+        if [ "$rem" -ne "0" ]; then
+                echo $i
+        fi
+done

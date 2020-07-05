@@ -1,0 +1,16 @@
+Revising the Select Query II
+Query the names of all American cities in CITY with populations larger than 120000.
+The CountryCode for America is USA.
+
+The CITY table is described as follows:
+   ID = Number
+   NAME = Varchar2 (17)
+   COUNTRYCODE = Varchar2 (3)
+   DISTRICT = Varchar2 (20)
+   POPULATION =  Number
+
+==========SOLUTION========
+MS SQL
+SELECT NAME
+FROM CITY
+WHERE COUNTRYCODE = 'USA' AND POPULATION >= 120000

@@ -1,0 +1,7 @@
+A Personalized Echo
+Write a Bash script which accepts  as input and displays a greeting: "Welcome (name)"
+
+==========SOLUTION========
+#!/bin/bash
+read name
+echo "Welcome $name"

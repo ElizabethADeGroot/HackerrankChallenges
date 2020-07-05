@@ -1,0 +1,17 @@
+Employee Salaries
+Write a query that prints a list of employee names (i.e.: the name attribute) for employees
+in Employee having a salary greater than $2,000 per month who have been employees for less than  months.
+Sort your result by ascending employee_id.
+
+Employee table:
+   employee_id = integer
+   NAME = string
+   Months = integer
+   Salary = integer
+
+==========SOLUTION========
+MS SQL
+SELECT NAME
+FROM EMPLOYEE
+WHERE salary > 2000 AND months < 10
+ORDER BY employee_ID ASC

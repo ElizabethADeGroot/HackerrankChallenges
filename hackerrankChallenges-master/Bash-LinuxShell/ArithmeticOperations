@@ -1,0 +1,10 @@
+Arithmetic Operations
+We provide you with expressions containing +,-,*,^, / and parenthesis. None of the numbers in the expression involved will exceed .
+Your task is to evaluate the expression and display the correct output rounding upto  decimal places.
+
+Notes: Needed to use printf to do rounding of the numbers. From there, its important to use scale = 4 and then use printf to round off to 3 decimal points using "%.3f"
+
+==========SOLUTION========
+#!/bin/bash
+read X
+printf "%.3f" $(echo "scale=4;$X" | bc)

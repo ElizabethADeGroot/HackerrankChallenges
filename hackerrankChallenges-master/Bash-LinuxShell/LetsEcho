@@ -1,0 +1,6 @@
+Let's Echo
+Objective is to print  'HELLO'
+
+==========SOLUTION========
+#!/bin/bash
+echo HELLO
