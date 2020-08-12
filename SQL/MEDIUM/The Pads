@@ -8,3 +8,11 @@ where [occupation_count] is the number of occurrences of an occupation in OCCUPA
 
 Note: There will be at least two entries in the table for each type of occupation.
 -------------------------------------
+SELECT CONCAT(Name, CONCAT('(',LEFT(Occupation,1),')'))
+FROM occupations
+ORDER BY Name ASC;
+       
+SELECT CONCAT('There are a total of ',COUNT(*),' ',lower(Occupation),'s.')
+FROM Occupations
+GROUP BY Occupation
+ORDER BY COUNT(Occupation),Occupation ASC
